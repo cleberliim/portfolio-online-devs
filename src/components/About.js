@@ -14,7 +14,7 @@ const About = () => {
 
   return (
     <div className="bg-white p-6 sm:p-8 md:p-10 rounded-lg shadow-lg max-w-4xl mx-auto mt-12">
-      <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center">SOBRE MIM</h2>
+      <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center tracking-widest">SOBRE MIM</h2>
 
       <div className="mb-6">
         <p className="text-base sm:text-lg mb-4 text-gray-700">

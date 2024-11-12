@@ -2,6 +2,13 @@
 
 Este projeto é uma aplicação simples desenvolvida com **React.js** e **TailwindCSS**, criada para servir como um portfólio online para desenvolvedores Backend. O objetivo é fornecer um design minimalista e funcional, onde o desenvolvedor pode exibir seus trabalhos e compartilhar informações sobre sua experiência, habilidades e identidade profissional.
 
+## 🌐 Acesse o Portfolio ao Vivo
+
+Você pode acessar o portfólio ao vivo através do seguinte link:
+
+[**Portfolio ao Vivo**](https://my-portfolio-drab-psi-76.vercel.app/)  
+
+
 ## 📦 Tecnologias
 
 - **React.js** – Biblioteca JavaScript para construção da interface de usuário.
