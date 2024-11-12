@@ -80,15 +80,16 @@ const Portfolio = () => {
       : portfolioItems.filter((project) => project.category === selectedCategory);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-svh bg-white pt-14">
+
       {/* Filtros de Categoria */}
       <div className="flex justify-center space-x-6 mb-8">
         {['Todos', 'Back End', 'Front End', 'APIs'].map((category) => (
           <button
             key={category}
             onClick={() => filterProjects(category)}
-            className={`text-lg font-medium py-2 px-4 rounded-lg transition-all duration-300 hover:bg-gray-100 focus:outline-none ${
-              selectedCategory === category ? 'bg-gray-900 text-white' : 'bg-transparent text-gray-600'
+            className={`text-lg font-medium py-2 px-4 rounded-lg  ${
+              selectedCategory === category ? 'bg-gray-900 text-white' : ' text-gray-600'
             }`}
           >
             {category}
