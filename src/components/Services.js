@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css'; // Importando o CSS do Skeleton
 import { FaCode, FaChartBar, FaMobileAlt, FaWhatsapp } from "react-icons/fa";
 
 const services = [
@@ -28,20 +30,46 @@ const ServiceCard = ({ title, description, icon }) => (
 );
 
 const Services = () => {
+  // Estado para controlar o carregamento
+  const [isLoading, setIsLoading] = useState(true);
+
+  // Simulação de carregamento (pode ser uma requisição real)
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false); // Simula o carregamento dos dados após 2 segundos
+    }, 2000); // Ajuste o tempo conforme necessário
+  }, []);
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-white p-40">
-      <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center tracking-widest">Serviços Prestados</h2>
+      <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center tracking-widest">
+        {isLoading ? <Skeleton width={200} /> : "Serviços Prestados"}
+      </h2>
       <div className="container mx-auto px-4 py-12">
         {/* Grid responsivo de serviços */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-          {services.map((service, index) => (
-            <ServiceCard
-              key={index}
-              title={service.title}
-              description={service.description}
-              icon={service.icon}
-            />
-          ))}
+          {isLoading ? (
+            // Exibindo Skeletons para cada card de serviço
+            Array(3).fill().map((_, index) => (
+              <div key={index} className="bg-slate-800 p-6 rounded-lg flex flex-col items-center text-center shadow-lg">
+                <div className="mb-4">
+                  <Skeleton circle width={50} height={50} />
+                </div>
+                <Skeleton width={150} height={20} className="mb-2" />
+                <Skeleton width={200} height={15} />
+              </div>
+            ))
+          ) : (
+            // Exibindo os dados reais dos serviços
+            services.map((service, index) => (
+              <ServiceCard
+                key={index}
+                title={service.title}
+                description={service.description}
+                icon={service.icon}
+              />
+            ))
+          )}
         </div>
       </div>
 
