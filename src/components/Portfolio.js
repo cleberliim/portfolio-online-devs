@@ -80,7 +80,7 @@ const Portfolio = () => {
       : portfolioItems.filter((project) => project.category === selectedCategory);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-svh bg-white pt-14">
+    <div className="  px-4 sm:px-6 lg:px-8  h bg-white pt-14">
 
       {/* Filtros de Categoria */}
       <div className="flex justify-center space-x-6 mb-8">
