@@ -17,14 +17,14 @@ Para rodar este projeto em sua máquina local, siga os passos abaixo:
 Clone este repositório para o seu computador:
 
 
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+git clone https://github.com/cleberliim/my-portfolio.git
 
 
 ### 2. Instalar as dependências
 
 Navegue até o diretório do projeto e instale as dependências com o seguinte comando:
 
-cd nome-do-repositorio
+cd my-portfolio
 npm install
 
 ### 3. Rodar o projeto
@@ -68,7 +68,7 @@ Este projeto está licenciado sob a [MIT License](LICENSE).
 
 ## 👥 Autores
 
-- **Cleber Lima** – [Seu Perfil no GitHub](https://github.com/cleberliim)
+- **Cleber Lima** – (https://github.com/cleberliim)
 
 ## 📥 Baixar o Código
 

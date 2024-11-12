@@ -1,5 +1,4 @@
 import React from 'react';
- 
 
 const About = () => {
   // Lista de habilidades com suas porcentagens
@@ -14,17 +13,17 @@ const About = () => {
   ];
 
   return (
-    <div className="bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto mt-12">
-      <h2 className="text-3xl font-bold mb-6 text-center">SOBRE MIM</h2>
+    <div className="bg-white p-6 sm:p-8 md:p-10 rounded-lg shadow-lg max-w-4xl mx-auto mt-12">
+      <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center">SOBRE MIM</h2>
 
       <div className="mb-6">
-        <p className="text-gray-700 mb-4">
+        <p className="text-base sm:text-lg mb-4 text-gray-700">
           Profissional com mais de 4 anos de experiência em TI, especialmente no setor logístico. 
           Atuei em cargos que evoluíram de Suporte Técnico até Analista de Sistema, desenvolvendo 
           projetos internos e para parceiros, com foco em qualidade e eficiência.
         </p>
 
-        <ul className="list-disc list-inside text-gray-700 mb-6">
+        <ul className="list-disc list-inside text-gray-700 mb-6 text-sm sm:text-base">
           <li><strong>Idade:</strong> 28</li>
           <li><strong>Cidade:</strong> Boituva - SP</li>
           <li><strong>Freelance:</strong> Disponível</li>
@@ -32,11 +31,11 @@ const About = () => {
       </div>
 
       {/* Tabela de Habilidades com Scroll Invisível */}
-      <div className="overflow-y-auto max-h-[300px] scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100 ">
-        <table className="min-w-full table-auto border-collapse border border-gray-300 mt-6 ">
+      <div className="overflow-x-auto sm:overflow-hidden">
+        <table className="min-w-full table-auto border-collapse border border-gray-300 mt-6">
           <thead>
             <tr>
-              <th colSpan="2" className="border border-gray-300 text-center p-4 text-xl font-semibold bg-gray-100">
+              <th colSpan="2" className="border border-gray-300 text-center p-4 text-xl sm:text-2xl font-semibold bg-gray-100">
                 Programming Skills
               </th>
             </tr>
@@ -52,15 +51,13 @@ const About = () => {
                       style={{ width: `${skill.level}%` }}
                     />
                   </div>
-                  <p className="text-sm text-gray-500">{skill.level}% de conhecimento</p>
+                  <p className="text-sm sm:text-base text-gray-500">{skill.level}% de conhecimento</p>
                 </td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
-
-       
 
       {/* Botão de Download do Currículo */}
       <a
