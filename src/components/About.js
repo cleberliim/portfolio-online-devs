@@ -1,4 +1,5 @@
 import React from 'react';
+ 
 
 const About = () => {
   // Lista de habilidades com suas porcentagens
@@ -31,8 +32,8 @@ const About = () => {
       </div>
 
       {/* Tabela de Habilidades com Scroll Invisível */}
-      <div className="overflow-y-auto max-h-[300px] scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
-        <table className="min-w-full table-auto border-collapse border border-gray-300 mt-6">
+      <div className="overflow-y-auto max-h-[300px] scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100 ">
+        <table className="min-w-full table-auto border-collapse border border-gray-300 mt-6 ">
           <thead>
             <tr>
               <th colSpan="2" className="border border-gray-300 text-center p-4 text-xl font-semibold bg-gray-100">
@@ -63,16 +64,16 @@ const About = () => {
 
       {/* Botão de Download do Currículo */}
       <a
-        href="/path/to/your/curriculum.pdf" // Substitua com o caminho real do seu currículo
-        download="Curriculo_Cleber_Lima.pdf"
+        href="https://drive.google.com/file/d/12OpR5AAOwsXFtIhvrSGACXxMMqudxZOy/view?usp=sharing" // Substitua com o caminho real do seu currículo
+        download="curriculum.pdf"
         className="flex items-center bg-blue-500 text-white py-3 px-6 rounded-full shadow-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-all duration-200 mt-6 mx-auto block text-center"
-        aria-label="Baixar Currículo"
+        aria-label="ver Currículo"
       >
         <svg className="text-2xl mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="24" height="24">
           <path d="M12 5v14m7-7l-7 7-7-7" />
           <path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2" />
         </svg>
-        <span>Baixar Currículo</span>
+        <span>Ver Currículo</span>
       </a>
     </div>
   );

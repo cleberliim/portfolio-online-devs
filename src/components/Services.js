@@ -1,5 +1,5 @@
 import React from "react";
-import { FaPaintBrush, FaCode, FaChartBar, FaMobileAlt, FaWhatsapp } from "react-icons/fa";
+import { FaCode, FaChartBar, FaMobileAlt, FaWhatsapp } from "react-icons/fa";
 
 const services = [
   {
