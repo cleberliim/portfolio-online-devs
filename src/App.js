@@ -1,13 +1,11 @@
 
+import Sidebar from './sidebar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-         
-         
-         
-      </header>
+        <Sidebar />
+        
     </div>
   );
 }
