@@ -32,7 +32,7 @@ const Services = () => {
     <div className="flex flex-col items-center justify-center min-h-screen bg-white">
       <div className="container mx-auto px-4 py-12">
         {/* Grid responsivo de serviços */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <ServiceCard
               key={index}
