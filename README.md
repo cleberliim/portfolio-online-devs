@@ -68,13 +68,13 @@ Este projeto está licenciado sob a [MIT License](LICENSE).
 
 ## 👥 Autores
 
-- **Seu Nome** – [Seu Perfil no GitHub](https://github.com/seu-usuario)
+- **Cleber Lima** – [Seu Perfil no GitHub](https://github.com/cleberliim)
 
 ## 📥 Baixar o Código
 
 Se preferir, você pode baixar o código-fonte deste repositório como um arquivo compactado:
 
-1. Acesse o repositório no GitHub: [https://github.com/seu-usuario/nome-do-repositorio](https://github.com/seu-usuario/nome-do-repositorio)
+1. Acesse o repositório no GitHub: [https://github.com/cleberliim/my-portfolio](https://github.com/cleberliim/my-portfolio)
 2. No canto superior direito, clique em **"Code"**.
 3. Selecione a opção **"Download ZIP"**.
 
