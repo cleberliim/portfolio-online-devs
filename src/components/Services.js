@@ -29,7 +29,8 @@ const ServiceCard = ({ title, description, icon }) => (
 
 const Services = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-white">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-white p-40">
+      <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center tracking-widest">Serviços Prestados</h2>
       <div className="container mx-auto px-4 py-12">
         {/* Grid responsivo de serviços */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
