@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Portfolio Simplificado para Desenvolvedores Backend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é uma aplicação simples desenvolvida com **React.js** e **TailwindCSS**, criada para servir como um portfólio online para desenvolvedores Backend. O objetivo é fornecer um design minimalista e funcional, onde o desenvolvedor pode exibir seus trabalhos e compartilhar informações sobre sua experiência, habilidades e identidade profissional.
 
-## Available Scripts
+## 📦 Tecnologias
 
-In the project directory, you can run:
+- **React.js** – Biblioteca JavaScript para construção da interface de usuário.
+- **TailwindCSS** – Framework de CSS utilitário para estilização rápida e responsiva.
+- **Vite** – Ferramenta de build para React, com foco em alta performance.
 
-### `npm start`
+## 🚀 Começando
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Para rodar este projeto em sua máquina local, siga os passos abaixo:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 1. Clonar o repositório
 
-### `npm test`
+Clone este repositório para o seu computador:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+git clone https://github.com/seu-usuario/nome-do-repositorio.git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2. Instalar as dependências
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Navegue até o diretório do projeto e instale as dependências com o seguinte comando:
 
-### `npm run eject`
+cd nome-do-repositorio
+npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 3. Rodar o projeto
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para iniciar o projeto no ambiente de desenvolvimento, execute o seguinte comando:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+npm run dev
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## ✨ Funcionalidades
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Página de apresentação** – Apresentação simples com informações sobre o desenvolvedor.
+- **Exibição de projetos** – Seção para listar e detalhar projetos desenvolvidos, com links para repositórios GitHub ou deploys ao vivo.
+- **Design responsivo** – Com TailwindCSS, o layout se adapta a diferentes tamanhos de tela.
+- **Seção de habilidades** – Apresentação das tecnologias e ferramentas dominadas, ideal para um desenvolvedor backend mostrar sua stack.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🎨 Personalização
 
-### Code Splitting
+Este projeto foi feito com um design simplificado, mas você pode facilmente personalizá-lo para se adequar à sua identidade visual.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. **Modificar o conteúdo**: Altere o arquivo `src/data.js` para editar as informações sobre você e seus projetos.
+2. **Alterar o tema visual**: Você pode modificar as classes do TailwindCSS nos arquivos de componentes para personalizar as cores, fontes e espaçamentos.
 
-### Analyzing the Bundle Size
+## 📱 Responsividade
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+O design foi projetado para ser totalmente responsivo. Use a funcionalidade de inspeção do navegador para testar como a aplicação se comporta em diferentes dispositivos móveis, como smartphones e tablets.
 
-### Making a Progressive Web App
+## 🛠️ Contribuições
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Se você gostaria de contribuir para este projeto, siga os passos abaixo:
 
-### Advanced Configuration
+1. Faça um fork deste repositório.
+2. Crie uma branch para sua feature (`git checkout -b minha-nova-feature`).
+3. Commit suas mudanças (`git commit -am 'Adiciona nova feature'`).
+4. Envie para o seu repositório forkado (`git push origin minha-nova-feature`).
+5. Abra um Pull Request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📄 Licença
 
-### Deployment
+Este projeto está licenciado sob a [MIT License](LICENSE).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 👥 Autores
 
-### `npm run build` fails to minify
+- **Seu Nome** – [Seu Perfil no GitHub](https://github.com/seu-usuario)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📥 Baixar o Código
+
+Se preferir, você pode baixar o código-fonte deste repositório como um arquivo compactado:
+
+1. Acesse o repositório no GitHub: [https://github.com/seu-usuario/nome-do-repositorio](https://github.com/seu-usuario/nome-do-repositorio)
+2. No canto superior direito, clique em **"Code"**.
+3. Selecione a opção **"Download ZIP"**.
+
+Isso irá baixar o código-fonte do projeto em um arquivo .zip, que você pode descompactar e rodar localmente.
