@@ -80,7 +80,7 @@ const Portfolio = () => {
       : portfolioItems.filter((project) => project.category === selectedCategory);
 
   return (
-    <div className="  px-4 sm:px-6 lg:px-8  h bg-white pt-14">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  h bg-white pt-14">
 
       {/* Filtros de Categoria */}
       <div className="flex justify-center space-x-6 mb-8">
@@ -100,7 +100,8 @@ const Portfolio = () => {
       {/* Contêiner rolável para os projetos */}
       <div className={`${styles['project-container']} ${styles['scrollbar-hidden']}`}>
         {/* Galeria de Portfólio */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+
           {filteredProjects.map((item) => (
             <div
               key={item.id}
