@@ -55,15 +55,15 @@ const portfolioItems = [
   },
   {
     id: 5,
-    title: 'Projeto APIs de Pagamento',
-    description: 'Integração com APIs de pagamento como Stripe e PayPal.',
+    title: 'Projeto CRUD simples',
+    description: 'Um projeto de Crud. .',
     category: 'Back End',
     technologies: [
       { name: 'Node.js', icon: 'fab fa-node-js' },
-      { name: 'Stripe', icon: 'fab fa-stripe' },
-      { name: 'PayPal', icon: 'fab fa-paypal' },
+      { name: 'JavaScript', icon: 'fa-brands fa-js' },
+      { name: 'Express',   },
     ],
-    github: 'https://github.com/seu-usuario/projeto-pagamentos',
+    github: 'https://github.com/cleberliim/onfinances-backend',
   },
   {
     id: 6,
@@ -77,6 +77,20 @@ const portfolioItems = [
     ],
     github: 'https://github.com/seu-usuario/projeto-pagamentos',
   },
+  
+  {id: 7,
+  title: 'Landing page for Developer Back-End',
+  description: 'Um site simples comercial.',
+  category: 'Front End',
+  technologies: [
+    { name: 'Node.js', icon: 'fab fa-node-js' },
+    { name: 'React.js', icon: 'fa-brands fa-react' },
+    { name: 'Vercel', icon: 'fa-brands fa-octopus-deploy' },
+    { name: 'TawindCss', icon: 'fa-regular fa-file-code' },  
+  ],
+  github: 'hhttps://my-portfolio-drab-psi-76.vercel.app/',
+},
+  
 ];
 
 
@@ -153,7 +167,7 @@ const Portfolio = () => {
         className="fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded-full flex items-center shadow-lg hover:bg-green-600 transition-colors duration-300"
       >
         <FaWhatsapp size={24} className="mr-2" />
-        Solicitar Orçamento
+        Vamos conversar?
       </a>
     </div>
   );

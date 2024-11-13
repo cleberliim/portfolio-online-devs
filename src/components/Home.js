@@ -74,7 +74,7 @@ const Home = () => {
             rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faWhatsapp} className="mr-2" />
-            <span>Vamos conversar</span>
+            <span>Vamos conversar?</span>
           </a>
         </>
       )}
