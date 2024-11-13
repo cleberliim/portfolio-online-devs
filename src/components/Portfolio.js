@@ -55,8 +55,8 @@ const portfolioItems = [
   },
   {
     id: 5,
-    title: 'Projeto CRUD simples',
-    description: 'Um projeto de Crud. .',
+    title: 'Projeto CRUD Simples',
+    description: 'Um projeto CRUD completo que realiza operações de criação, leitura, atualização e exclusão de dados. Ideal para gerenciar informações de forma simples e eficiente.',
     category: 'Back End',
     technologies: [
       { name: 'Node.js', icon: 'fab fa-node-js' },
@@ -80,7 +80,7 @@ const portfolioItems = [
   
   {id: 7,
   title: 'Landing page for Developer Back-End',
-  description: 'Um site simples comercial.',
+  description: 'Landing page para Desenvolvedores Back-End que precisam mostrar seu portfólio sem perder tempo com design.',
   category: 'Front End',
   technologies: [
     { name: 'Node.js', icon: 'fab fa-node-js' },
@@ -88,7 +88,7 @@ const portfolioItems = [
     { name: 'Vercel', icon: 'fa-brands fa-octopus-deploy' },
     { name: 'TawindCss', icon: 'fa-regular fa-file-code' },  
   ],
-  github: 'hhttps://my-portfolio-drab-psi-76.vercel.app/',
+  github: 'https://github.com/cleberliim/my-portfolio',
 },
   
 ];
