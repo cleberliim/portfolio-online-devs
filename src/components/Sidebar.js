@@ -1,22 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import Skeleton from 'react-loading-skeleton'; // Certifique-se de importar o Skeleton
-import 'react-loading-skeleton/dist/skeleton.css'; // Importar o CSS
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
 
 const Sidebar = () => {
   const [loading, setLoading] = useState(true);
 
-  // Simulando um carregamento de dados
   useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000); // 2 segundos de carregamento para simulação
-  }, []);
+    // Simula o carregamento de dados (como uma chamada de API ou algo do tipo)
+    const timer = setTimeout(() => {
+      setLoading(false); // Após 2 segundos, o carregamento é concluído
+    }, 2000);
+
+    // Limpeza do timer para evitar efeitos colaterais
+    return () => clearTimeout(timer);
+  }, []); // O array vazio aqui garante que o useEffect só seja executado uma vez
 
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'Sobre mim', path: '/about' },
-    { name: 'Serviços', path: '/Services' },
+    { name: 'Serviços', path: '/services' },
     { name: 'Portfólio', path: '/portfolio' },
     { name: 'Contato', path: '/contact' },
   ];
@@ -27,8 +30,9 @@ const Sidebar = () => {
         {loading ? <Skeleton width={150} /> : 'CLEBER LIMA'}
       </h2>
       <p className="text-gray-600 tracking-widest text-sm lg:text-base mb-10 text-center">
-        {loading ? <Skeleton width={180} /> : 'Analista de Sistemas Jr'}
+        {loading ? <Skeleton width={180} /> : 'Developer Back End'}
       </p>
+
       <nav className="flex flex-col items-center space-y-6 text-lg lg:text-xl">
         {loading ? (
           <Skeleton count={5} height={30} width={200} />
@@ -38,9 +42,7 @@ const Sidebar = () => {
               key={link.name}
               to={link.path}
               className={({ isActive }) =>
-                isActive
-                  ? "text-black font-semibold"
-                  : "text-gray-700 hover:text-black"
+                isActive ? 'text-black font-semibold' : 'text-gray-700 hover:text-black'
               }
             >
               {link.name}
@@ -49,20 +51,22 @@ const Sidebar = () => {
         )}
       </nav>
 
+      {/* Redes sociais */}
       <div className="flex flex-col items-center mt-12 text-center">
         <p className="text-gray-500 text-sm lg:text-base">
           &copy; developed by <span className="font-semibold">Cleber Lima</span>
         </p>
 
         <div className="flex justify-center space-x-4 mt-6">
+          {/* Redes sociais não tem mais Skeleton */}
           <a href="https://github.com/cleberliim" className="text-gray-500 hover:text-black">
-            <Skeleton width={24} height={24} />
+            <i className="fab fa-github"></i>
           </a>
           <a href="https://www.linkedin.com/in/cleberliim" className="text-gray-500 hover:text-black">
-            <Skeleton width={24} height={24} />
+            <i className="fab fa-linkedin-in"></i>
           </a>
           <a href="https://wa.me/+5515991495111" className="text-gray-500 hover:text-black">
-            <Skeleton width={24} height={24} />
+            <i className="fab fa-whatsapp"></i>
           </a>
         </div>
       </div>
