@@ -1,5 +1,6 @@
 {
-  "name": "landing-page-for-developer-back-End",
+  "name": "page for backend developers",
+  
   "version": "0.1.0",
   "private": true,
   "dependencies": {

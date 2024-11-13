@@ -1,4 +1,4 @@
-# Landpage de Portfolio para Desenvolvedores Backend
+# Página para Desenvolvedores Backend
 
 
 Este projeto é uma aplicação simples desenvolvida com **React.js** e **TailwindCSS**, criada para servir como um portfólio online para desenvolvedores Backend. O objetivo é fornecer um design minimalista e funcional, onde o desenvolvedor pode exibir seus trabalhos e compartilhar informações sobre sua experiência, habilidades e identidade profissional.
