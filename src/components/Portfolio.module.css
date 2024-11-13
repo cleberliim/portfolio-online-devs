@@ -1,12 +1,12 @@
 /* Esconde as barras de rolagem no navegador */
+.scrollbar-hidden {
+  scrollbar-width: none; /* Firefox */
+}
+
 .scrollbar-hidden::-webkit-scrollbar {
-    display: none; /* Esconde a barra de rolagem */
-  }
-  
-  .scrollbar-hidden {
-    -ms-overflow-style: none;  /* Para o Internet Explorer */
-    scrollbar-width: none; /* Para o Firefox */
-  }
+  display: none; /* Chrome, Safari, Opera */
+}
+
   
   .project-container {
     height: 24rem;

@@ -1,8 +1,7 @@
-// src/components/Portfolio.js
 import React, { useState, useEffect } from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
-import SkeletonCard from './SkeletonCard'; // Certifique-se de que o caminho está correto
-import styles from './Portfolio.module.css';
+import SkeletonCard from './SkeletonCard';
+
 
 const portfolioItems = [
   {
@@ -21,12 +20,13 @@ const portfolioItems = [
   {
     id: 2,
     title: 'Projeto Front End - AmaOcupacional',
-    description: 'Um site simples utilizando PHP e taiwindcss.',
+    description: 'Um site simples comercial.',
     category: 'Front End',
     technologies: [
-      { name: 'PHP', icon: 'fab fa-react' },
+      { name: 'PHP', icon: 'fa-brands fa-php' },
       { name: 'TawindCss', icon: 'fab fa-css3-alt' },
       { name: 'JavaScript', icon: 'fab fa-js-square' },
+      { name: 'API MAPS', icon: 'fa-solid fa-map' },
     ],
     github: 'https://www.amaocupacional.com/',
   },
@@ -43,6 +43,30 @@ const portfolioItems = [
   },
   {
     id: 4,
+    title: 'Projeto APIs de Pagamento',
+    description: 'Integração com APIs de pagamento como Stripe e PayPal.',
+    category: 'Back End',
+    technologies: [
+      { name: 'Node.js', icon: 'fab fa-node-js' },
+      { name: 'Stripe', icon: 'fab fa-stripe' },
+      { name: 'PayPal', icon: 'fab fa-paypal' },
+    ],
+    github: 'https://github.com/seu-usuario/projeto-pagamentos',
+  },
+  {
+    id: 5,
+    title: 'Projeto APIs de Pagamento',
+    description: 'Integração com APIs de pagamento como Stripe e PayPal.',
+    category: 'Back End',
+    technologies: [
+      { name: 'Node.js', icon: 'fab fa-node-js' },
+      { name: 'Stripe', icon: 'fab fa-stripe' },
+      { name: 'PayPal', icon: 'fab fa-paypal' },
+    ],
+    github: 'https://github.com/seu-usuario/projeto-pagamentos',
+  },
+  {
+    id: 6,
     title: 'Projeto APIs de Pagamento',
     description: 'Integração com APIs de pagamento como Stripe e PayPal.',
     category: 'Back End',
@@ -76,10 +100,10 @@ const Portfolio = () => {
     : portfolioItems.filter((project) => project.category === selectedCategory);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white pt-14">
-      <div className="flex justify-center space-x-6 mb-8">
-        {/*add ou delete o nome das categorias em portfólio. */}
-        {['Todos', 'Back End', 'Front End'].map((category) => ( 
+    <div className="h-screen flex flex-col max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white pt-14">
+      {/* Cabeçalho fixo */}
+      <div className="flex justify-center space-x-6 mb-4">
+        {['Todos', 'Back End', 'Front End'].map((category) => (
           <button
             key={category}
             onClick={() => filterProjects(category)}
@@ -90,7 +114,8 @@ const Portfolio = () => {
         ))}
       </div>
 
-      <div className={`${styles['project-container']} ${styles['scrollbar-hidden']}`}>
+      {/* Conteúdo rolável */}
+      <div className="flex-grow overflow-y-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
           {loading
             ? Array.from({ length: 4 }).map((_, index) => <SkeletonCard key={index} />)
@@ -112,7 +137,7 @@ const Portfolio = () => {
                   rel="noopener noreferrer"
                   className="inline-flex items-center bg-black text-white py-2 px-4 rounded-full hover:bg-gray-800 transition-colors duration-300"
                 >
-                  <i className="fab fa-github mr-2"></i>
+                  <i className="fa-solid fa-eye mr-2"></i>
                   Visitar
                 </a>
               </div>
@@ -120,6 +145,7 @@ const Portfolio = () => {
         </div>
       </div>
 
+      {/* Botão do WhatsApp fixo */}
       <a
         href="https://wa.me/+5515991495111"
         target="_blank"
