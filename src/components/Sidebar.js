@@ -58,17 +58,18 @@ const Sidebar = () => {
         </p>
 
         <div className="flex justify-center space-x-4 mt-6">
-          {/* Redes sociais não tem mais Skeleton */}
-          <a href="https://github.com/cleberliim" className="text-gray-500 hover:text-black">
-            <i className="fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/cleberliim" className="text-gray-500 hover:text-black">
-            <i className="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://wa.me/+5515991495111" className="text-gray-500 hover:text-black">
-            <i className="fab fa-whatsapp"></i>
-          </a>
-        </div>
+  {/* Redes sociais com cores */}
+  <a href="https://github.com/cleberliim" className="text-gray-500 hover:text-black">
+    <i className="fab fa-github text-2xl text-black hover:text-gray-800"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/cleberliim" className="text-blue-700 hover:text-blue-800">
+    <i className="fab fa-linkedin-in  text-2xl text-blue-700 hover:text-blue-800"></i>
+  </a>
+  <a href="https://wa.me/+5515991495111" className="text-green-500 hover:text-green-600">
+    <i className="fab fa-whatsapp text-2xl text-green-500 hover:text-green-600"></i>
+  </a>
+</div>
+
       </div>
     </aside>
   );
