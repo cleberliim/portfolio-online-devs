@@ -19,7 +19,7 @@ const About = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false); // Desliga o loading após 2 segundos
-    }, 2000); // Ajuste o tempo de acordo com a simulação do seu carregamento
+    }, 1000); // Ajuste o tempo de acordo com a simulação do seu carregamento
     return () => clearTimeout(timer);
   }, []);
 

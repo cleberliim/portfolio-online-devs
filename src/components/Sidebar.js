@@ -9,8 +9,8 @@ const Sidebar = () => {
   useEffect(() => {
     // Simula o carregamento de dados (como uma chamada de API ou algo do tipo)
     const timer = setTimeout(() => {
-      setLoading(false); // Após 2 segundos, o carregamento é concluído
-    }, 2000);
+      setLoading(false); // Após 1 segundos, o carregamento é concluído
+    }, 1000);
 
     // Limpeza do timer para evitar efeitos colaterais
     return () => clearTimeout(timer);

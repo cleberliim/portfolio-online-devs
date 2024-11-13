@@ -11,7 +11,7 @@ const Contact = () => {
 
   // Simulação de carregamento (exemplo com 2 segundos)
   useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 2000);
+    const timer = setTimeout(() => setIsLoading(false), 1000);
     return () => clearTimeout(timer);
   }, []);
 

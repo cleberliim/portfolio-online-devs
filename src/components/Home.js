@@ -25,7 +25,7 @@ const Home = () => {
     // Simula um carregamento de dados (como uma requisição API)
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // Define o tempo para o skeleton ser mostrado
+    }, 1000); // Define o tempo para o skeleton ser mostrado
     return () => clearTimeout(timer);
   }, []);
 

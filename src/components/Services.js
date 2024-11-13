@@ -37,7 +37,7 @@ const Services = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false); // Simula o carregamento dos dados após 2 segundos
-    }, 2000); // Ajuste o tempo conforme necessário
+    }, 1000); // Ajuste o tempo conforme necessário
   }, []);
 
   return (
