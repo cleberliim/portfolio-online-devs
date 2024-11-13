@@ -16,7 +16,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center py-10 px-6 sm:px-8 lg:px-16">
+    <div className="min-h-screen bg-white flex flex-col items-center justify-center py-10 px-6 sm:px-8 lg:px-16">
       {isLoading ? (
         <>
           <Skeleton className="w-32 h-10 mb-6" />

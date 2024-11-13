@@ -25,7 +25,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <aside className="bg-white w-full lg:w-1/4 h-full flex flex-col justify-center items-center py-8 lg:py-12 mx-4 lg:mx-8">
+    <aside className="  w-full lg:w-1/4 h-screen flex flex-col justify-center items-center py-8 lg:py-12 mx-4 lg:mx-8">
       <h2 className="text-2xl lg:text-3xl mb-4 tracking-widest font-black text-center">
         {loading ? <Skeleton width={150} /> : 'CLEBER LIMA'}
       </h2>
