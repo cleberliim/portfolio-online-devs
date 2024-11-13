@@ -20,15 +20,15 @@ const portfolioItems = [
   },
   {
     id: 2,
-    title: 'Projeto Front End - E-commerce',
-    description: 'Um e-commerce simples utilizando React.',
+    title: 'Projeto Front End - AmaOcupacional',
+    description: 'Um site simples utilizando PHP e taiwindcss.',
     category: 'Front End',
     technologies: [
-      { name: 'React', icon: 'fab fa-react' },
-      { name: 'CSS', icon: 'fab fa-css3-alt' },
+      { name: 'PHP', icon: 'fab fa-react' },
+      { name: 'TawindCss', icon: 'fab fa-css3-alt' },
       { name: 'JavaScript', icon: 'fab fa-js-square' },
     ],
-    github: 'https://github.com/seu-usuario/projeto-ecommerce',
+    github: 'https://www.amaocupacional.com/',
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ const portfolioItems = [
     id: 4,
     title: 'Projeto APIs de Pagamento',
     description: 'Integração com APIs de pagamento como Stripe e PayPal.',
-    category: 'APIs',
+    category: 'Back End',
     technologies: [
       { name: 'Node.js', icon: 'fab fa-node-js' },
       { name: 'Stripe', icon: 'fab fa-stripe' },
@@ -78,7 +78,8 @@ const Portfolio = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white pt-14">
       <div className="flex justify-center space-x-6 mb-8">
-        {['Todos', 'Back End', 'Front End', 'APIs'].map((category) => (
+        {/*add ou delete o nome das categorias em portfólio. */}
+        {['Todos', 'Back End', 'Front End'].map((category) => ( 
           <button
             key={category}
             onClick={() => filterProjects(category)}
@@ -112,7 +113,7 @@ const Portfolio = () => {
                   className="inline-flex items-center bg-black text-white py-2 px-4 rounded-full hover:bg-gray-800 transition-colors duration-300"
                 >
                   <i className="fab fa-github mr-2"></i>
-                  Ver no GitHub
+                  Visitar
                 </a>
               </div>
             ))}
