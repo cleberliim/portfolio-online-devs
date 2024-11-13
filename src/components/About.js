@@ -97,7 +97,7 @@ const About = () => {
               <path d="M12 5v14m7-7l-7 7-7-7" />
               <path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2" />
             </svg>
-            <span>Ver Currículo Completo</span>
+            <span>Ver currículo completo</span>
           </a>
         )}
       </div>
