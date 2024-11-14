@@ -1,7 +1,7 @@
 # Página para Desenvolvedores Backend
 
 
-Este projeto é uma aplicação simples desenvolvida com **React.js** e **TailwindCSS**, criada para servir como um portfólio online para desenvolvedores Backend. O objetivo é fornecer um design minimalista e funcional, onde o desenvolvedor pode exibir seus trabalhos e compartilhar informações sobre sua experiência, habilidades e identidade profissional.
+Este projeto é uma aplicação simples, desenvolvida com React.js e TailwindCSS, projetada para funcionar como um portfólio online para desenvolvedores Backend. O objetivo é oferecer um design minimalista e funcional, permitindo que o desenvolvedor exiba seus projetos, compartilhe informações sobre sua experiência, habilidades e identidade profissional de forma intuitiva. A aplicação foi pensada para que o desenvolvedor não precise de grandes conhecimentos em design ou investir muito tempo na criação de seu portfólio, focando no que realmente importa: seu trabalho e suas competências.
 
 ## 🌐 Acesse o Portfolio ao Vivo
 
