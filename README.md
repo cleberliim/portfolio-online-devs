@@ -25,7 +25,7 @@ Para rodar este projeto em sua máquina local, siga os passos abaixo:
 Clone este repositório para o seu computador:
 
 
-git clone https://github.com/cleberliim/my-portfolio.git
+git clone https://github.com/cleberliim/page-for-backend-developers.git
 
 
 ### 2. Instalar as dependências
@@ -82,7 +82,7 @@ Este projeto está licenciado sob a [MIT License](LICENSE).
 
 Se preferir, você pode baixar o código-fonte deste repositório como um arquivo compactado:
 
-1. Acesse o repositório no GitHub: [https://github.com/cleberliim/my-portfolio](https://github.com/cleberliim/my-portfolio)
+1. Acesse o repositório no GitHub: [https://github.com/cleberliim/page-for-backend-developers.git](https://github.com/cleberliim/page-for-backend-developers.git)
 2. No canto superior direito, clique em **"Code"**.
 3. Selecione a opção **"Download ZIP"**.
 

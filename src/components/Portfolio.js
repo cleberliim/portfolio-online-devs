@@ -7,15 +7,15 @@ const portfolioItems = [
   {
     id: 1,
     title: 'Projeto API de Autenticação',
-    description: 'Uma API de autenticação simples usando JWT para garantir segurança.',
+    description: 'Este é um projeto de API simples para autenticação de usuários utilizando JWT (JSON Web Token). Ele permite que os usuários se registrem, façam login e acessem rotas protegidas. A API é construída com Express.js e documentada de maneira interativa usando Swagger.',
     category: 'Back End',
     technologies: [
       { name: 'Node.js', icon: 'fab fa-node-js' },
       { name: 'Express', icon: 'fas fa-cogs' },
       { name: 'JWT', icon: 'fas fa-lock' },
-      { name: 'MongoDB', icon: 'fas fa-database' }
+      { name: 'Swagger', icon: 'fa-solid fa-bars-staggered' }
     ],
-    github: 'https://github.com/seu-usuario/projeto-api-autenticacao',
+    github: 'https://github.com/cleberliim/api-auth-jwt',
   },
   {
     id: 2,
