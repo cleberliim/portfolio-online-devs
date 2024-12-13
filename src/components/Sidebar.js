@@ -30,7 +30,7 @@ const Sidebar = () => {
         {loading ? <Skeleton width={150} /> : 'CLEBER LIMA'}
       </h2>
       <p className="text-gray-600 tracking-widest text-sm lg:text-base mb-10 text-center">
-        {loading ? <Skeleton width={180} /> : 'Developer Back End'}
+        {loading ? <Skeleton width={180} /> : 'Analista de Sistemas'}
       </p>
 
       <nav className="flex flex-col items-center space-y-6 text-lg lg:text-xl">
@@ -58,17 +58,17 @@ const Sidebar = () => {
         </p>
 
         <div className="flex justify-center space-x-4 mt-6">
-  {/* Redes sociais com cores */}
-  <a href="https://github.com/cleberliim" className="text-gray-500 hover:text-black">
-    <i className="fab fa-github text-2xl text-black hover:text-gray-800"></i>
-  </a>
-  <a href="https://www.linkedin.com/in/cleberliim" className="text-blue-700 hover:text-blue-800">
-    <i className="fab fa-linkedin-in  text-2xl text-blue-700 hover:text-blue-800"></i>
-  </a>
-  <a href="https://wa.me/+5515991495111" className="text-green-500 hover:text-green-600">
-    <i className="fab fa-whatsapp text-2xl text-green-500 hover:text-green-600"></i>
-  </a>
-</div>
+          {/* Redes sociais com cores */}
+          <a href="https://github.com/cleberliim" className="text-gray-500 hover:text-black">
+            <i className="fab fa-github text-3xl text-black hover:text-gray-800"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/cleberliim" className="text-blue-700 hover:text-blue-800">
+            <i className="fab fa-linkedin-in  text-3xl text-blue-700 hover:text-blue-800"></i>
+          </a>
+          <a href="https://wa.me/+5515991495111" className="text-green-500 hover:text-green-600">
+            <i className="fab fa-whatsapp text-3xl text-green-500 hover:text-green-600"></i>
+          </a>
+        </div>
 
       </div>
     </aside>

@@ -1,23 +1,28 @@
 import React, { useState, useEffect } from "react";
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css'; // Importando o CSS do Skeleton
-import { FaCode, FaChartBar, FaMobileAlt, FaWhatsapp } from "react-icons/fa";
+import { FaCode, FaLaptop, FaCog, FaCheckCircle, FaWhatsapp } from "react-icons/fa";
 
 const services = [
   {
-    title: "Web Development",
-    description: "Modern and responsive websites.",
+    title: "Desenvolvimento de Software Sob Medida",
+    description: "Soluções personalizadas para empresas, como ERPs, CRMs, sistemas de gestão de estoque e mais.",
     icon: <FaCode size={30} className="text-green-500" />,
   },
   {
-    title: "Power BI",
-    description: "Data analytics and visualization.",
-    icon: <FaChartBar size={30} className="text-purple-500" />,
+    title: "Desenvolvimento de Sites e Aplicativos Web",
+    description: "Criação de sites responsivos e aplicativos web, incluindo e-commerce, blogs, landing pages, entre outros.",
+    icon: <FaLaptop size={30} className="text-blue-500" />,
   },
   {
-    title: "Mobile Application",
-    description: "Custom mobile solutions for iOS and Android.",
-    icon: <FaMobileAlt size={30} className="text-pink-500" />,
+    title: "Consultoria em Tecnologia",
+    description: "Ajudamos sua empresa a escolher as melhores tecnologias e implementar soluções eficazes.",
+    icon: <FaCog size={30} className="text-yellow-500" />,
+  },
+  {
+    title: "Testes e Garantia de Qualidade (QA)",
+    description: "Realizamos testes manuais e automatizados para garantir que o software seja funcional e livre de erros.",
+    icon: <FaCheckCircle size={30} className="text-purple-500" />,
   },
 ];
 
@@ -41,9 +46,9 @@ const Services = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-white p-40">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-white p-6 sm:p-20">
       <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center tracking-widest">
-        {isLoading ? <Skeleton width={200} /> : "Serviços Prestados"}
+        {isLoading ? <Skeleton width={200} /> : "Serviços que ofereço:"}
       </h2>
       <div className="container mx-auto px-4 py-12">
         {/* Grid responsivo de serviços */}

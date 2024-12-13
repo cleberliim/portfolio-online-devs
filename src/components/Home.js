@@ -42,7 +42,7 @@ const Home = () => {
             alt="Imagem de Perfil"
           />
           <h2 className="text-3xl sm:text-4xl font-black tracking-widest">CLEBER LIMA</h2>
-          <p className="text-gray-600 tracking-widest text-base sm:text-lg">Analista de Sistemas Jr | Developer Back End</p>
+          <p className="text-gray-600 tracking-widest text-base sm:text-lg">Analista de Sistemas</p>
 
           <div className="flex justify-center space-x-4 mt-4">
             {/* Ícones de redes sociais */}

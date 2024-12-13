@@ -5,13 +5,13 @@ import 'react-loading-skeleton/dist/skeleton.css'; // Garantir que o CSS do skel
 const About = () => {
   // Lista de habilidades com suas porcentagens
   const skills = [
-    { name: 'Node.js', level: 60 },
+    { name: 'Node.js', level: 80 },
     { name: 'Express', level: 80 },
-    { name: 'API REST', level: 75 },
-    { name: 'Python', level: 80 },
+    { name: 'API REST', level: 80 },
+    { name: 'Python', level: 50 },
     { name: 'PHP', level: 70 },
-    { name: 'TypeScript', level: 60 },
-    { name: 'CI/CD', level: 60 },
+    { name: 'TypeScript', level: 70 },
+    { name: 'CI/CD', level: 70 },
   ];
 
   const [loading, setLoading] = useState(true);
@@ -31,7 +31,7 @@ const About = () => {
 
       <div className="mb-6">
         <p className="text-base sm:text-lg mb-4 text-gray-700">
-          {loading ? <Skeleton count={3} /> : 'Profissional com mais de 4 anos de experiência em TI, especialmente no setor logístico. Atuei em cargos que evoluíram de Suporte Técnico até Analista de Sistema, desenvolvendo projetos internos e para parceiros, com foco em qualidade e eficiência.'}
+          {loading ? <Skeleton count={3} /> : 'Profissional de Tecnologia da Informação com mais de 4 anos de experiência em desenvolvimento de sistemas, gestão de projetos e implementação de soluções tecnológicas. Especialista em criar e otimizar sistemas, com domínio de APIs REST, TypeScript, PHP, Python, e integrações CI/CD, além de ampla experiência em metodologias ágeis como Scrum e Kanban, complementada por habilidades interpessoais e de liderança. Focado na excelência técnica e inovação, contribuo para o desenvolvimento de sistemas e plataformas projetados para aprimorar processos, reduzir custos e gerar valor estratégico, com experiência comprovada em alguns segmentos, com ênfase no logístico. Apaixonado por inovação, estou sempre em busca de soluções tecnológicas que transformem desafios em oportunidades. Estou aberto a conexões e novas parcerias para projetos que agreguem valor e potencializem resultados.'}
         </p>
 
         <ul className="list-disc list-inside text-gray-700 mb-6 text-sm sm:text-base">
@@ -68,8 +68,8 @@ const About = () => {
                   <td className="border border-gray-300 p-4">
                     <p className="font-medium text-gray-700">{skill.name}</p>
                     <div className="bg-gray-200 rounded-full h-2.5 mb-2">
-                      <div 
-                        className="bg-slate-600 h-2.5 rounded-full" 
+                      <div
+                        className="bg-slate-600 h-2.5 rounded-full"
                         style={{ width: `${skill.level}%` }}
                       />
                     </div>
