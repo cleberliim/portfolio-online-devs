@@ -34,7 +34,7 @@ const portfolioItems = [
     id: 3,
     title: "Site - BlackRec",
     description: "Uma API para gerenciar usuários com Node.js e MongoDB.",
-    category: "Back End",
+    category: "Front End",
     technologies: [
       { name: "PHP", icon: "fa-brands fa-php" },
       { name: "TawindCss", icon: "fab fa-css3-alt" },
