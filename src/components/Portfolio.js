@@ -91,7 +91,14 @@ const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState("Todos");
   const [loading, setLoading] = useState(true);
 
+  // Estado para armazenar os cliques dos projetos
+  const [clickCounts, setClickCounts] = useState({});
+
   useEffect(() => {
+    // Carregar contadores de cliques do localStorage ao iniciar
+    const storedClicks = JSON.parse(localStorage.getItem("clickCounts")) || {};
+    setClickCounts(storedClicks);
+
     const timer = setTimeout(() => {
       setLoading(false);
     }, 1000);
@@ -102,12 +109,24 @@ const Portfolio = () => {
     setSelectedCategory(category);
   };
 
+  const handleClick = (id) => {
+    setClickCounts((prevCounts) => {
+      const newCounts = { ...prevCounts };
+      newCounts[id] = (newCounts[id] || 0) + 1;
+
+      // Salvar o novo contador de cliques no localStorage
+      localStorage.setItem("clickCounts", JSON.stringify(newCounts));
+
+      return newCounts;
+    });
+  };
+
   const filteredProjects =
     selectedCategory === "Todos"
       ? portfolioItems
       : portfolioItems.filter(
-        (project) => project.category === selectedCategory
-      );
+          (project) => project.category === selectedCategory
+        );
 
   return (
     <div className="h-screen flex flex-col max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white pt-14">
@@ -155,15 +174,22 @@ const Portfolio = () => {
                     </div>
                   ))}
                 </div>
-                <a
-                  href={item.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center bg-black text-white py-2 px-4 rounded-full hover:bg-gray-800 transition-colors duration-300"
-                >
-                  <i className="fa-solid fa-eye mr-2"></i>
-                  Visitar
-                </a>
+                <div className="flex items-center space-x-2">
+                  <a
+                    href={item.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-black text-white py-2 px-4 rounded-full hover:bg-gray-800 transition-colors duration-300"
+                    onClick={() => handleClick(item.id)} // Passa o ID do projeto para o contador
+                  >
+                    <i className="fa-solid fa-eye mr-2"></i>
+                    Visitar
+                  </a>
+                  {/* Exibição do contador de cliques individual */}
+                  <span className="text-lg text-gray-600">
+                    {clickCounts[item.id] || 0}
+                  </span>
+                </div>
               </div>
             ))}
         </div>
@@ -174,10 +200,9 @@ const Portfolio = () => {
         href="https://wa.me/+5515991495111"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded-full flex items-center shadow-lg hover:bg-green-600 transition-colors duration-300"
+        className="fixed bottom-8 right-8 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors duration-300"
       >
-        <FaWhatsapp size={24} className="mr-2" />
-        Vamos conversar?
+        <FaWhatsapp className="w-6 h-6" />
       </a>
     </div>
   );
