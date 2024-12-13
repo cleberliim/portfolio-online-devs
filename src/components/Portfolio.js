@@ -15,7 +15,7 @@ const portfolioItems = [
       { name: "JWT", icon: "fas fa-lock" },
       { name: "Swagger", icon: "fa-solid fa-bars-staggered" },
     ],
-    github: "https://github.com/cleberliim/api-auth-jwt",
+    github: "https://github.com/cleberliim/my-auth-api",
   },
   {
     id: 2,
@@ -41,7 +41,7 @@ const portfolioItems = [
       { name: "JavaScript", icon: "fab fa-js-square" },
       { name: "API MAPS", icon: "fa-solid fa-map" },
     ],
-    github: "http://blackrecprod.com.br/",
+    github: "https://blackrecprod.com.br/",
   },
   {
     id: 4,
@@ -56,19 +56,6 @@ const portfolioItems = [
       { name: "JWT", icon: "fas fa-lock" },
     ],
     github: "https://github.com/cleberliim/Api-user-manager",
-  },
-  {
-    id: 5,
-    title: "Projeto APIs de Pagamento",
-    description: "Integração com APIs de pagamento como Stripe e PayPal.",
-    category: "Back End",
-    technologies: [
-      { name: "Node.js", icon: "fab fa-node-js" },
-      { name: "Express", icon: "fas fa-cogs" },
-      { name: "Stripe", icon: "fab fa-stripe" },
-      { name: "PayPal", icon: "fab fa-paypal" },
-    ],
-    github: "https://github.com/cleberliim/projeto-pagamentos",
   },
   {
     id: 6,
@@ -119,8 +106,8 @@ const Portfolio = () => {
     selectedCategory === "Todos"
       ? portfolioItems
       : portfolioItems.filter(
-          (project) => project.category === selectedCategory
-        );
+        (project) => project.category === selectedCategory
+      );
 
   return (
     <div className="h-screen flex flex-col max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white pt-14">
@@ -130,11 +117,10 @@ const Portfolio = () => {
           <button
             key={category}
             onClick={() => filterProjects(category)}
-            className={`text-lg font-medium py-2 px-4 rounded-lg ${
-              selectedCategory === category
-                ? "bg-gray-900 text-white"
-                : "text-gray-600"
-            }`}
+            className={`text-lg font-medium py-2 px-4 rounded-lg ${selectedCategory === category
+              ? "bg-gray-900 text-white"
+              : "text-gray-600"
+              }`}
           >
             {category}
           </button>
@@ -146,40 +132,40 @@ const Portfolio = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
           {loading
             ? Array.from({ length: 4 }).map((_, index) => (
-                <SkeletonCard key={index} />
-              ))
+              <SkeletonCard key={index} />
+            ))
             : filteredProjects.map((item) => (
-                <div
-                  key={item.id}
-                  className="relative p-6 border border-gray-200 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
-                >
-                  <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-gray-600 mb-6">
-                    {item.description}
-                  </p>
-                  <div className="flex flex-wrap gap-4 mb-6">
-                    {item.technologies.map((tech, index) => (
-                      <div key={index} className="flex items-center space-x-2">
-                        <i className={`${tech.icon} text-gray-600`}></i>
-                        <span className="text-sm text-gray-500">
-                          {tech.name}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                  <a
-                    href={item.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center bg-black text-white py-2 px-4 rounded-full hover:bg-gray-800 transition-colors duration-300"
-                  >
-                    <i className="fa-solid fa-eye mr-2"></i>
-                    Visitar
-                  </a>
+              <div
+                key={item.id}
+                className="relative p-6 border border-gray-200 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                  {item.title}
+                </h3>
+                <p className="text-sm text-gray-600 mb-6">
+                  {item.description}
+                </p>
+                <div className="flex flex-wrap gap-4 mb-6">
+                  {item.technologies.map((tech, index) => (
+                    <div key={index} className="flex items-center space-x-2">
+                      <i className={`${tech.icon} text-gray-600`}></i>
+                      <span className="text-sm text-gray-500">
+                        {tech.name}
+                      </span>
+                    </div>
+                  ))}
                 </div>
-              ))}
+                <a
+                  href={item.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center bg-black text-white py-2 px-4 rounded-full hover:bg-gray-800 transition-colors duration-300"
+                >
+                  <i className="fa-solid fa-eye mr-2"></i>
+                  Visitar
+                </a>
+              </div>
+            ))}
         </div>
       </div>
 
