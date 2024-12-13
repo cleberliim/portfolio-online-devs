@@ -38,7 +38,7 @@ const Home = () => {
           {/* Foto de perfil */}
           <img
             className="w-32 h-32 md:w-36 md:h-36 rounded-full border-4"
-            src="https://media.licdn.com/dms/image/v2/D4D35AQHgDto9brXHmg/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1731162392985?e=1732035600&v=beta&t=R9I3sFBMWUwHNu-dj-wYi48hAe-2TvHx8r-os-HmDms"
+            src="https://avatars.githubusercontent.com/u/71719859?v=4"
             alt="Imagem de Perfil"
           />
           <h2 className="text-3xl sm:text-4xl font-black tracking-widest">CLEBER LIMA</h2>
