@@ -9,7 +9,7 @@ Este projeto é uma aplicação simples, desenvolvida com **React.js** e **Tailw
 
 Você pode acessar o portfólio ao vivo através do seguinte link:
 
-[Portfólio ao Vivo](#)
+[Portfólio ao Vivo](https://my-portfolio-drab-psi-76.vercel.app/)
 
 ### 📦 Tecnologias
 
