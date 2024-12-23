@@ -73,9 +73,9 @@ const portfolioItems = [
 
   {
     id: 7,
-    title: "Landing page for Developer Back-End",
+    title: "Portfolio Online Devs",
     description:
-      "Landing page para Desenvolvedores Back-End que precisam mostrar seu portfólio sem perder tempo com design.",
+      "Portfolio Online para Desenvolvedores que precisam mostrar seu portfólio sem perder tempo com design.",
     category: "Front End",
     technologies: [
       { name: "Node.js", icon: "fab fa-node-js" },
@@ -83,16 +83,16 @@ const portfolioItems = [
       { name: "Vercel", icon: "fa-brands fa-octopus-deploy" },
       { name: "TawindCss", icon: "fa-regular fa-file-code" },
     ],
-    github: "https://github.com/cleberliim/my-portfolio",
+    github: "https://github.com/cleberliim/portfolio-online-devs",
   },
 ];
 
 const Portfolio = () => {
-  const [selectedCategory, setSelectedCategory] = useState("Todos");
-  const [loading, setLoading] = useState(true);
+  const [ selectedCategory, setSelectedCategory ] = useState("Todos");
+  const [ loading, setLoading ] = useState(true);
 
   // Estado para armazenar os cliques dos projetos
-  const [clickCounts, setClickCounts] = useState({});
+  const [ clickCounts, setClickCounts ] = useState({});
 
   useEffect(() => {
     // Carregar contadores de cliques do localStorage ao iniciar
@@ -112,7 +112,7 @@ const Portfolio = () => {
   const handleClick = (id) => {
     setClickCounts((prevCounts) => {
       const newCounts = { ...prevCounts };
-      newCounts[id] = (newCounts[id] || 0) + 1;
+      newCounts[ id ] = (newCounts[ id ] || 0) + 1;
 
       // Salvar o novo contador de cliques no localStorage
       localStorage.setItem("clickCounts", JSON.stringify(newCounts));
@@ -125,14 +125,14 @@ const Portfolio = () => {
     selectedCategory === "Todos"
       ? portfolioItems
       : portfolioItems.filter(
-          (project) => project.category === selectedCategory
-        );
+        (project) => project.category === selectedCategory
+      );
 
   return (
     <div className="h-screen flex flex-col max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white pt-14">
       {/* Cabeçalho fixo */}
       <div className="flex justify-center space-x-6 mb-4">
-        {["Todos", "Back End", "Front End"].map((category) => (
+        {[ "Todos", "Back End", "Front End" ].map((category) => (
           <button
             key={category}
             onClick={() => filterProjects(category)}
@@ -187,7 +187,7 @@ const Portfolio = () => {
                   </a>
                   {/* Exibição do contador de cliques individual */}
                   <span className="text-lg text-gray-600">
-                    {clickCounts[item.id] || 0}
+                    {clickCounts[ item.id ] || 0}
                   </span>
                 </div>
               </div>
