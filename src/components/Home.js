@@ -19,7 +19,7 @@ const SkeletonLoader = () => (
 );
 
 const Home = () => {
-  const [loading, setLoading] = useState(true);
+  const [ loading, setLoading ] = useState(true);
 
   useEffect(() => {
     // Simula um carregamento de dados (como uma requisição API)
@@ -38,7 +38,7 @@ const Home = () => {
           {/* Foto de perfil */}
           <img
             className="w-32 h-32 md:w-36 md:h-36 rounded-full border-4"
-            src="https://avatars.githubusercontent.com/u/71719859?v=4"
+            src="https://avatars.githubusercontent.com/u/71719859?v=4&size=64"
             alt="Imagem de Perfil"
           />
           <h2 className="text-3xl sm:text-4xl font-black tracking-widest">CLEBER LIMA</h2>

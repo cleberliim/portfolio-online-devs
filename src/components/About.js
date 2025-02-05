@@ -5,16 +5,22 @@ import 'react-loading-skeleton/dist/skeleton.css'; // Garantir que o CSS do skel
 const About = () => {
   // Lista de habilidades com suas porcentagens
   const skills = [
-    { name: 'Node.js', level: 80 },
-    { name: 'Express', level: 80 },
-    { name: 'API REST', level: 80 },
-    { name: 'Python', level: 50 },
     { name: 'PHP', level: 70 },
-    { name: 'TypeScript', level: 70 },
-    { name: 'CI/CD', level: 70 },
+    { name: 'Laravel', level: 80 },
+    { name: 'API REST', level: 80 },
+    { name: 'SQL Server', level: 80 },
+    { name: 'Oracle', level: 80 },
+    { name: 'PL/SQL', level: 30 },
+    { name: 'MySQL', level: 80 },
+    { name: 'Apache', level: 80 },
+    { name: 'Scrum', level: 70 },
+    { name: 'Kanban', level: 70 },
+    { name: 'Analise de Dados', level: 70 },
+    { name: 'Metodologias Ageis', level: 70 },
+
   ];
 
-  const [loading, setLoading] = useState(true);
+  const [ loading, setLoading ] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -31,7 +37,7 @@ const About = () => {
 
       <div className="mb-6">
         <p className="text-base sm:text-lg mb-4 text-gray-700">
-          {loading ? <Skeleton count={3} /> : 'Profissional de Tecnologia da Informação com mais de 4 anos de experiência em desenvolvimento de sistemas, gestão de projetos e implementação de soluções tecnológicas. Especialista em criar e otimizar sistemas, com domínio de APIs REST, TypeScript, PHP, Python, e integrações CI/CD, além de ampla experiência em metodologias ágeis como Scrum e Kanban, complementada por habilidades interpessoais e de liderança. Focado na excelência técnica e inovação, contribuo para o desenvolvimento de sistemas e plataformas projetados para aprimorar processos, reduzir custos e gerar valor estratégico, com experiência comprovada em alguns segmentos, com ênfase no logístico. Apaixonado por inovação, estou sempre em busca de soluções tecnológicas que transformem desafios em oportunidades. Estou aberto a conexões e novas parcerias para projetos que agreguem valor e potencializem resultados.'}
+          {loading ? <Skeleton count={3} /> : 'Com cerca de 4 anos de experiência na área de Tecnologia da Informação, minha atuação é focada no desenvolvimento e implantação de sistemas, bem como na análise de dados utilizando SQL Server. Tenho ênfase na otimização de processos para melhorar a eficiência operacional e gerar resultados concretos. Minha experiência também inclui Sustentação e Suporte, com a responsabilidade pela manutenção contínua de sistemas, garantindo a estabilidade dos serviços, resolução de incidentes e implementação de melhorias nos processos operacionais. Além disso, possuo experiência na gestão de projetos, utilizando metodologias ágeis (Scrum), assegurando entregas de alta qualidade e alinhadas às metas estratégicas da empresa.'}
         </p>
 
         <ul className="list-disc list-inside text-gray-700 mb-6 text-sm sm:text-base">
@@ -88,7 +94,7 @@ const About = () => {
           <Skeleton width={200} height={50} />
         ) : (
           <a
-            href="https://drive.google.com/file/d/12OpR5AAOwsXFtIhvrSGACXxMMqudxZOy/view?usp=sharing" // Substitua com o caminho real do seu currículo
+            href="https://drive.google.com/file/d/18-ZNT_V1uf76qYWcrlBEmsZWVbYKO4A1/view?usp=sharing" // Substitua com o caminho real do seu currículo
             download="curriculum.pdf"
             className="flex items-center bg-blue-500 text-white py-3 px-6 rounded-full shadow-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-all duration-200"
             aria-label="ver Currículo"

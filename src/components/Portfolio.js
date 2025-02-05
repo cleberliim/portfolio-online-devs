@@ -71,21 +71,9 @@ const portfolioItems = [
     github: "https://github.com/cleberliim/onfinances-backend",
   },
 
-  {
-    id: 7,
-    title: "Portfolio Online Devs",
-    description:
-      "Portfolio Online para Desenvolvedores que precisam mostrar seu portfólio sem perder tempo com design.",
-    category: "Front End",
-    technologies: [
-      { name: "Node.js", icon: "fab fa-node-js" },
-      { name: "React.js", icon: "fa-brands fa-react" },
-      { name: "Vercel", icon: "fa-brands fa-octopus-deploy" },
-      { name: "TawindCss", icon: "fa-regular fa-file-code" },
-    ],
-    github: "https://github.com/cleberliim/portfolio-online-devs",
-  },
+
 ];
+
 
 const Portfolio = () => {
   const [ selectedCategory, setSelectedCategory ] = useState("Todos");

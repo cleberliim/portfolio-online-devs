@@ -4,7 +4,7 @@ import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 
 const Sidebar = () => {
-  const [loading, setLoading] = useState(true);
+  const [ loading, setLoading ] = useState(true);
 
   useEffect(() => {
     // Simula o carregamento de dados (como uma chamada de API ou algo do tipo)
@@ -30,7 +30,7 @@ const Sidebar = () => {
         {loading ? <Skeleton width={150} /> : 'CLEBER LIMA'}
       </h2>
       <p className="text-gray-600 tracking-widest text-sm lg:text-base mb-10 text-center">
-        {loading ? <Skeleton width={180} /> : 'Analista de Sistemas'}
+        {loading ? <Skeleton width={180} /> : 'Analista de Sistemas Jr'}
       </p>
 
       <nav className="flex flex-col items-center space-y-6 text-lg lg:text-xl">
