@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css'; // Garantir que o CSS do skeleton esteja carregado
 
+
 const About = () => {
   // Lista de habilidades com suas porcentagens
   const skills = [
