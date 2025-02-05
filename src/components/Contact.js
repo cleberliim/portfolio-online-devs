@@ -7,7 +7,7 @@ const Skeleton = ({ className }) => (
 );
 
 const Contact = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [ isLoading, setIsLoading ] = useState(true);
 
   // Simulação de carregamento (exemplo com 2 segundos)
   useEffect(() => {

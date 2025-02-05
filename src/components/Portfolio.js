@@ -117,7 +117,7 @@ const Portfolio = () => {
       );
 
   return (
-    <div className="h-screen flex flex-col max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white pt-14">
+    <div className="h-screen flex flex-col max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 bg-white pt-14">
       {/* Cabeçalho fixo */}
       <div className="flex justify-center space-x-6 mb-4">
         {[ "Todos", "Back End", "Front End" ].map((category) => (
@@ -136,7 +136,7 @@ const Portfolio = () => {
 
       {/* Conteúdo rolável */}
       <div className="flex-grow overflow-y-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="p-8 grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-8">
           {loading
             ? Array.from({ length: 4 }).map((_, index) => (
               <SkeletonCard key={index} />

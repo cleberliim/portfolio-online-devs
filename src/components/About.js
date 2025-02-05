@@ -5,17 +5,19 @@ import 'react-loading-skeleton/dist/skeleton.css'; // Garantir que o CSS do skel
 const About = () => {
   // Lista de habilidades com suas porcentagens
   const skills = [
-    { name: 'PHP', level: 70 },
+    { name: 'PHP', level: 80 },
     { name: 'Laravel', level: 80 },
     { name: 'API REST', level: 80 },
     { name: 'SQL Server', level: 80 },
     { name: 'Oracle', level: 80 },
+    { name: 'Analise de Dados', level: 70 },
+    { name: 'Power BI', level: 70 },
     { name: 'PL/SQL', level: 30 },
     { name: 'MySQL', level: 80 },
     { name: 'Apache', level: 80 },
     { name: 'Scrum', level: 70 },
     { name: 'Kanban', level: 70 },
-    { name: 'Analise de Dados', level: 70 },
+    { name: 'Jira', level: 70 },
     { name: 'Metodologias Ageis', level: 70 },
 
   ];
