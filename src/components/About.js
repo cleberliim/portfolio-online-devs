@@ -13,13 +13,13 @@ const About = () => {
     { name: 'Oracle', level: 80 },
     { name: 'Analise de Dados', level: 70 },
     { name: 'Power BI', level: 70 },
-    { name: 'PL/SQL', level: 30 },
     { name: 'MySQL', level: 80 },
     { name: 'Apache', level: 80 },
-    { name: 'Scrum', level: 70 },
     { name: 'Kanban', level: 70 },
-    { name: 'Jira', level: 70 },
+    { name: 'Microserviços', level: 70 },
     { name: 'Metodologias Ageis', level: 70 },
+    { name: 'Scrum', level: 70 },
+
 
   ];
 
