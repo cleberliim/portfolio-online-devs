@@ -5,17 +5,16 @@ import SkeletonCard from "./SkeletonCard";
 const portfolioItems = [
   {
     id: 1,
-    title: "Projeto API de Autenticação",
+    title: "PowerLink",
     description:
-      "Este é um projeto de API simples para autenticação de usuários utilizando JWT (JSON Web Token). Ele permite que os usuários se registrem, façam login e acessem rotas protegidas. A API é construída com Express.js e documentada de maneira interativa usando Swagger.",
+      "PowerLink é um gerenciador de Power BI que permite administrar seus dashboards com facilidade, garantindo praticidade e insights valiosos sem complicações.",
     category: "Back End",
     technologies: [
-      { name: "Node.js", icon: "fab fa-node-js" },
-      { name: "Express", icon: "fas fa-cogs" },
-      { name: "JWT", icon: "fas fa-lock" },
-      { name: "Swagger", icon: "fa-solid fa-bars-staggered" },
+      { name: "PHP", icon: "fa-brands fa-php" },
+      { name: "TawindCss", icon: "fab fa-css3-alt" },
+      { name: "JavaScript", icon: "fab fa-js-square" },
     ],
-    github: "https://github.com/cleberliim/my-auth-api",
+    github: "https://github.com/cleberliim/PowerLink",
   },
   {
     id: 2,
@@ -32,6 +31,20 @@ const portfolioItems = [
   },
   {
     id: 3,
+    title: "Portfólio Online para Devs",
+    description: "Este projeto é uma aplicação simples, desenvolvida com React.js e TailwindCSS, projetada para funcionar como um portfólio online para desenvolvedores em geral.",
+    category: "Front End",
+    technologies: [
+      { name: "Nodejs", icon: "fab fa-node" },
+      { name: "TawindCss", icon: "fab fa-css3-alt" },
+      { name: "JavaScript", icon: "fab fa-js-square" },
+
+    ],
+    github: "https://github.com/cleberliim/portfolio-online-devs",
+  },
+
+  {
+    id: 4,
     title: "Site - BlackRec",
     description: "Uma API para gerenciar usuários com Node.js e MongoDB.",
     category: "Front End",
@@ -43,33 +56,7 @@ const portfolioItems = [
     ],
     github: "https://blackrecprod.com.br/",
   },
-  {
-    id: 4,
-    title: "Projeto API de Gestão de Usuários",
-    description: "Uma API para gerenciar usuários com Node.js e MongoDB.",
-    category: "Back End",
-    technologies: [
-      { name: "Node.js", icon: "fab fa-node-js" },
-      { name: "MongoDB", icon: "fas fa-database" },
-      { name: "JavaScript", icon: "fa-brands fa-js" },
-      { name: "Express", icon: "fas fa-cogs" },
-      { name: "JWT", icon: "fas fa-lock" },
-    ],
-    github: "https://github.com/cleberliim/Api-user-manager",
-  },
-  {
-    id: 6,
-    title: "Projeto CRUD Simples",
-    description:
-      "Um projeto CRUD completo que realiza operações de criação, leitura, atualização e exclusão de dados. Ideal para gerenciar informações de forma simples e eficiente.",
-    category: "Back End",
-    technologies: [
-      { name: "Node.js", icon: "fab fa-node-js" },
-      { name: "JavaScript", icon: "fa-brands fa-js" },
-      { name: "Express" },
-    ],
-    github: "https://github.com/cleberliim/onfinances-backend",
-  },
+
 
 
 ];
