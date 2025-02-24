@@ -56,7 +56,19 @@ const portfolioItems = [
     ],
     github: "https://blackrecprod.com.br/",
   },
+  {
+    id: 5,
+    title: "GeoPho",
+    description: "Este é um projeto simples que permite detectar a localização de uma foto (a partir das coordenadas GPS) e exibi-la em um mapa interativo.",
+    category: "Back End",
+    technologies: [
+      { name: "PHP", icon: "fa-brands fa-php" },
+      { name: "TawindCss", icon: "fab fa-css3-alt" },
+      { name: "JavaScript", icon: "fab fa-js-square" },
 
+    ],
+    github: "https://github.com/cleberliim/GeoPhoto",
+  }
 
 
 ];
