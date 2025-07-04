@@ -48,8 +48,6 @@ const About = () => {
             <Skeleton count={3} />
           ) : (
             <>
-              <li><strong>Idade:</strong> 28</li>
-              <li><strong>Cidade:</strong> Boituva - SP</li>
               <li><strong>Freelance:</strong> Disponível</li>
             </>
           )}
@@ -97,7 +95,7 @@ const About = () => {
           <Skeleton width={200} height={50} />
         ) : (
           <a
-            href="https://drive.google.com/file/d/18-ZNT_V1uf76qYWcrlBEmsZWVbYKO4A1/view?usp=sharing" // Substitua com o caminho real do seu currículo
+            href="#" // Substitua com o caminho real do seu currículo
             download="curriculum.pdf"
             className="flex items-center bg-blue-500 text-white py-3 px-6 rounded-full shadow-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-all duration-200"
             aria-label="ver Currículo"

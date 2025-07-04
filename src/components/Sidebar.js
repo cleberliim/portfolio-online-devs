@@ -83,9 +83,6 @@ const Sidebar = () => {
             <a href="https://www.linkedin.com/in/cleberliim" className="text-blue-700 hover:text-blue-800">
               <i className="fab fa-linkedin-in text-2xl"></i>
             </a>
-            <a href="https://wa.me/+5515991495111" className="text-green-500 hover:text-green-600">
-              <i className="fab fa-whatsapp text-2xl"></i>
-            </a>
           </div>
         </div>
       </aside>

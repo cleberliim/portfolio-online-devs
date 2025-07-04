@@ -60,12 +60,8 @@ const Home = () => {
             >
               <FontAwesomeIcon icon={faLinkedinIn} />
             </a>
-            <a
-              href="https://wa.me/+5515991495111"
-              className="text-gray-500 hover:text-black text-2xl sm:text-3xl"
-            >
-              <FontAwesomeIcon icon={faWhatsapp} />
-            </a>
+           
+             
           </div>
 
           {/* Botão de "Vamos conversar" para WhatsApp */}
