@@ -36,15 +36,6 @@ const Contact = () => {
             Entre em contato comigo pelas redes sociais ou e-mail:
           </p>
           <div className="flex flex-wrap justify-center gap-6">
-            {/* WhatsApp */}
-            <a
-              href="https://wa.me/5515991495111"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-green-500 hover:text-green-700 transition-colors duration-300"
-            >
-              <FaWhatsapp size={40} className="hover:scale-110 transition-transform duration-300" />
-            </a>
 
             {/* LinkedIn */}
             <a
